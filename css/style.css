@@ -1,0 +1,69 @@
+.activity-type-list li{
+    list-style: none;
+}
+
+.training_events {
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 1140px;
+    z-index: 3;
+}
+
+.monthView{display:none}
+.weekView{display:block}
+.dayView{display:none}
+
+@media only screen and (min-width: 999px) and (max-width: 1199px) {
+    .training_events{
+        width: 940px;
+        /*top: 185px;*/
+    }
+}
+
+@media only screen and (min-width: 700px) and (max-width: 998px) {
+    .training_events{
+        width: 720px;
+        /*top: 208px;*/
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 700px) {
+    .training_events{
+        margin-left: 10px;
+        /*top: 215px;*/
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 300px) and (max-width: 599px) {
+    .training_events{
+        width: 100%;
+        padding: 0 15px;
+    }
+    .monthView{display:none;}
+    .weekView{display:none;}
+    .dayView{display:block;}
+    .fc-right{display: none;}
+
+    .period-time{
+        display: none;
+    }
+    .period-no{
+        font-size: 12px;
+        transform: rotate(-90deg);
+    }
+}
+
+.view-head{
+    background-color: #C7C7C7;
+}
+.view-day{
+    background-color: #6FAC00;
+}
+/*.weekend{background-color: #EEE !important;}*/
+.fc th{
+    vertical-align: middle;
+}
